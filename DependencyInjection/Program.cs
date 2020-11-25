@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace DependencyInjection
 {
@@ -9,7 +10,7 @@ namespace DependencyInjection
         static void Main(string[] args)
         {
 			var container = new DependencyContainer();
-		
+
 			container.AddTransient<ServiceConsumer>();
 			container.AddTransient<HelloService>();
 			container.AddSingleton<MessageService>();
